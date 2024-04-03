@@ -9,7 +9,7 @@ function getNextGroup(group: QueryBuilderGroup): QueryBuilderGroup {
     return group;
   }
 
-  let vm: Vue = group;
+  let vm: any = group;
 
   do {
     vm = vm.$parent;
