@@ -117,7 +117,7 @@ function mergeViaNode(
       children.splice(remover.affectedIdx, 1);
     }
 
-    parentEmitter.$emit(
+    parentEmitter.emit(
       'query-update',
       {
         operatorIdentifier: parentEmitter.selectedOperator,
