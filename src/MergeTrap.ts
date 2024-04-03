@@ -130,7 +130,7 @@ function mergeViaNode(
 }
 
 export default class MergeTrap implements MergeTrapInterface {
-  private eventBus: Vue
+  private eventBus: Vue = new Vue();
 
   constructor() {
     this.eventBus = new Vue();
