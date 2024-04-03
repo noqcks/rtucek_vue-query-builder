@@ -77,7 +77,7 @@ function mergeViaParent(
 
     children.splice(position, 1, newChild);
 
-    commonAncestor.$emit(
+    commonAncestor.emit(
       'query-update',
       {
         operatorIdentifier: commonAncestor.selectedOperator,
